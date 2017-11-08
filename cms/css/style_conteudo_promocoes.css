@@ -1,0 +1,274 @@
+/*CSS*/
+body{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
+    background-image: url('../img/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#segura_tudo{
+    width: 900px;
+    min-height: 870px;
+    height: auto;   
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px 20px 20px 20px;
+    border: solid 2px #000;
+}
+
+/*Cabecalho*/
+header{
+    width: 900px;
+    height: 160px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #D2691E;     
+}
+
+#cms{
+    width:330px;
+	height:50px;
+    margin-top: 60px;
+    margin-left: 50px;  
+    float: left;
+    font-size: 18px;
+}
+
+span{
+    font-size:25px;
+}
+
+
+#logo{
+	width:210px;
+	height:120px;
+    margin-top: 15px;
+    margin-left: 200px;
+    float: left;
+}
+
+
+/*Conteudo*/
+#principal{
+    width: 900px;
+    min-height: 650px; 
+    height: auto;
+}
+
+#linha1{
+    width: 900px;
+    height: 150px;
+    background-color: #CD853F;
+}
+
+#segura_menu{
+    width: 615px;
+    height: 150px;
+    float: left;
+}
+
+.opc_adm{
+    width: 130px;
+    height: 150px;
+    margin-left: 20px;
+    float: left;
+}
+
+.img_opc_adm{
+    width: 130px;
+    height: 130px;        
+}
+
+.texto_opc_adm{
+    width: 130px;
+    height: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+
+#area_nome{
+    width: 285px;
+    height: 80px;
+    float: left;
+}
+
+#bv{
+    width: 285px;
+    height: 25px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#nome{
+    width: 285px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#area_botao{
+    width: 285px;
+    height: 70px;
+    float: left;
+}
+
+#bt{
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 225px;
+}
+
+#linha2{
+    width: 900px;
+    min-height: 500px;
+    height: auto;
+    background-color: #DEB887;
+}
+
+.branco{
+    width: 10px;
+    height: 20px;
+}
+
+#area_operacao{
+    width: 300px;
+    height: 345px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo{
+    width: 300px;
+    height: 30px;
+    background-color: #990000;
+}
+
+
+.texto{
+    width: 295px;
+    height: 20px;
+    
+}
+
+#img{
+    width: 90px;
+    height: 70px;
+    float: left;
+}
+
+#botao{
+    width: 54px;
+    height: 22px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#area_titulo{
+    width: 478px;
+    height: 52px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nome_titulo{
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    padding-top: 15px;
+    float: left;
+    font-size: 17px;    
+    border: solid 1px #000;   
+    background-color: #990000;
+}
+
+#foto{
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    padding-top: 15px;
+    float: left;
+    font-size: 17px;    
+    border: solid 1px #000;   
+    background-color: #990000;
+}
+
+#bt_opc{
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    padding-top: 15px;
+    float: left;
+    font-size: 17px;    
+    border: solid 1px #000;
+    background-color: #990000;
+}
+
+#on_of{
+    width: 70px;
+    height: 35px;
+    text-align: center;
+    padding-top: 15px;
+    float: left;
+    font-size: 17px;    
+    border: solid 1px #000;
+    background-color: #990000;
+}
+
+.conteudo{
+    width: 478px;
+    height: 52px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tamanho_titulo{
+    width: 200px;
+    height: 50px;
+    float: left;
+    font-size: 17px; 
+    text-align: center;
+    border: solid 1px #000;
+    background-color: #CD853F;
+    overflow: auto;
+}
+
+.tamanho_foto{
+    width: 80px;
+    height: 50px;
+    padding-left: 20px;
+    float: left;  
+    border: solid 1px #000;
+    background-color: #CD853F;
+}
+
+.opc_bt{
+    width: 100px;
+    height: 50px;
+    float: left;   
+    border: solid 1px #000;
+    background-color: #CD853F;
+}
+
+.img_on_of{
+    width: 70px;
+    height: 50px;
+    float: left;
+    border: solid 1px #000;
+    background-color: #CD853F;
+}
+
+/*Rodape*/
+footer{
+    width: 900px;
+    height: 40px;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+    font-size: 18px;
+    background-color: #D2691E;   
+}

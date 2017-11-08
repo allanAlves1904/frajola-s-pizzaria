@@ -1,0 +1,259 @@
+-- MySQL dump 10.13  Distrib 5.6.26, for Win64 (x86_64)
+--
+-- Host: localhost    Database: dbfrajolas
+-- ------------------------------------------------------
+-- Server version	5.6.26-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `tbl_curiosidades`
+--
+
+DROP TABLE IF EXISTS `tbl_curiosidades`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_curiosidades` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `primeiro` varchar(7000) NOT NULL,
+  `segundo` varchar(7000) NOT NULL,
+  `terceiro` varchar(7000) NOT NULL,
+  `opc` tinyint(1) NOT NULL,
+  `primeiroTitulo` varchar(30) NOT NULL,
+  `segundoTitulo` varchar(30) NOT NULL,
+  `terceiroTitulo` varchar(30) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_curiosidades`
+--
+
+LOCK TABLES `tbl_curiosidades` WRITE;
+/*!40000 ALTER TABLE `tbl_curiosidades` DISABLE KEYS */;
+INSERT INTO `tbl_curiosidades` VALUES (4,'No I Festival de MPB (1965), com a canção Arrastão, de Edu Lobo e Vinicius de Moraes, Elis Regina começa a fazer sucesso no cenário musical brasileiro. No final da década tem início o tropicalismo, importante movimento cultural brasileiro. Janis Joplin é o símbolo do movimento de contracultura na música. A Tropicália: O Tropicalismo foi um movimento de ruptura que sacudiu o ambiente da música popular e da cultura brasileira entre 1967 e 1968. Seus participantes formaram um grande coletivo, cujos destaques foram os cantores-compositores Caetano Veloso e Gilberto Gil, além das participações da cantora Gal Costa e do cantor-compositor Tom Zé, da banda Mutantes, e do maestro Rogério Duprat. A cantora Nara Leão e os letristas José Carlos Capinan e Torquato Neto completaram o grupo, que teve também o artista gráfico, compositor e poeta Rogério Duarte como um de seus principais mentores intelectuais.','Músicos que fizeram sucesso: Gilberto Gil, Roberto Carlos, Caetano Veloso, Elis Regina, João Gilberto, Gal Costa, Tom Jobim, Erasmo Carlos, Rita Lee, Chico Buarque, Clara Nunes, Jair Rodrigues, Jorge Ben Jor, Raul Seixas, Tim Maia, Vinicius de Moraes, entre outros.','O show Rock in Rio, do início dos anos 80, serviu para impulsionar o rock nacional. Com uma temática fortemente urbana e tratando de temas sociais, juvenis e amorosos, surgem várias bandas musicais. É deste período o grupo Paralamas do Sucesso, Legião Urbana, Titãs, Kid Abelha, RPM, Plebe Rude, Ultraje a Rigor, Capital Inicial, Engenheiros do Hawaii, Ira! e Barão Vermelho. Também fazem sucesso: Cazuza, Rita Lee, Lulu Santos, Marina Lima, Lobão, Cássia Eller, Zeca Pagodinho e Raul Seixas. Os anos 90 também são marcados pelo crescimento e sucesso da música sertaneja ou country. Neste contexto, com um forte caráter romântico, despontam no cenário musical: Chitãozinho e Xororó, Zezé di Camargo e Luciano, Leandro e Leonardo e João Paulo e Daniel. Nesta época, no cenário rap destacam-se: Gabriel, o Pensador, O Rappa, Planet Hemp, Racionais MCs e Pavilhão 9.',1,'Curiosidades sobre os anos 60','Curiosidades sobre os anos 70','Curiosidades sobre os anos 80');
+/*!40000 ALTER TABLE `tbl_curiosidades` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_fale_conosco`
+--
+
+DROP TABLE IF EXISTS `tbl_fale_conosco`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_fale_conosco` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(150) NOT NULL,
+  `telefone` varchar(20) DEFAULT NULL,
+  `celular` varchar(21) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `home_page` varchar(255) DEFAULT NULL,
+  `link_facebook` varchar(255) DEFAULT NULL,
+  `profissao` varchar(100) NOT NULL,
+  `informacao_produto` varchar(255) DEFAULT NULL,
+  `sexo` varchar(1) NOT NULL,
+  `sugestao` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_fale_conosco`
+--
+
+LOCK TABLES `tbl_fale_conosco` WRITE;
+/*!40000 ALTER TABLE `tbl_fale_conosco` DISABLE KEYS */;
+INSERT INTO `tbl_fale_conosco` VALUES (14,'claudia aparecida gonçalves','','11 95083-3214','claudiacarvalho_g@hotmail.com.br','','','mamãe','','F','para de atiçar as lumbriguinhas com estas pizzas deliciosas.'),(15,'Adilson','','11 12538-9090','teste@.com','','','tester','','M','');
+/*!40000 ALTER TABLE `tbl_fale_conosco` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_nivel`
+--
+
+DROP TABLE IF EXISTS `tbl_nivel`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_nivel` (
+  `idNivel` int(11) NOT NULL AUTO_INCREMENT,
+  `nivel` varchar(45) NOT NULL,
+  PRIMARY KEY (`idNivel`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_nivel`
+--
+
+LOCK TABLES `tbl_nivel` WRITE;
+/*!40000 ALTER TABLE `tbl_nivel` DISABLE KEYS */;
+INSERT INTO `tbl_nivel` VALUES (1,'Administrador'),(2,'Operador'),(3,'Cataloguista');
+/*!40000 ALTER TABLE `tbl_nivel` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_nossa_historia`
+--
+
+DROP TABLE IF EXISTS `tbl_nossa_historia`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_nossa_historia` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `texto` varchar(8000) NOT NULL,
+  `titulo` varchar(50) NOT NULL,
+  `opc` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_nossa_historia`
+--
+
+LOCK TABLES `tbl_nossa_historia` WRITE;
+/*!40000 ALTER TABLE `tbl_nossa_historia` DISABLE KEYS */;
+INSERT INTO `tbl_nossa_historia` VALUES (1,'A história da Frajola?s Pizzaria começa com a família Protasio, que escolheu dedicar-se à culinária ao se mudar de Portugal para tentar uma nova vida no Brasil. De seus filhos, Silvester foi quem sempre se interessou pelas atividades do pai e, desde seus 13 anos, sempre o acompanhou em suas aventuras gastronômicas. Foram diversas atividades, desde lanchonetes, restaurantes, até sorveteria, dedicando sua vida toda ao ramo de alimentação. Em 1986 Silvester resolveu conhecer Cotia, naquela época uma promissora cidade despontado para o mercado gastronômico e com poucas casas especializadas em pizzas. Encantado pela cidade e com a grande oportunidade de um novo investimento, Silvester adquiriu aquela que ainda hoje é a pizzaria de maior tradição em Cotia: a Frajola?s Pizzaria, localizada no Centro , então com praticamente 25 anos. Foi ali, a partir de uma casa modesta e um cardápio simples, que se iniciou a grande trajetória da Frajola?s Pizzaria, hoje uma referencia não só do segmento de pizza, como também da própria cidade de Cotia. A Frajola?s Pizzaria se tornou famosa por usas inovações. Em meados de 1990, por exemplo, foi lançado um cardápio onde todas as pizzas possuíam um único preço, e em 2001 foi criado o melhor e mais tradicional rodízio de pizzas de Cotia. Além de nomes diferentes para as pizzas, a Frajola?s Pizzaria foi a primeira a lançar sabores especiais como a Baiacatu, criada em 1989, a primeira com calabresa moída; Mignon com Creme de Gorgonzola, de 1999; além de Strogonoff, Nordestina, Salmão, Brocozola e a pizza de Sorvete, provavelmente uma das mais imitadas (porém, sem o mesmo sucesso). Hoje a Frajola?s Pizzaria é um verdadeiro laboratório gastronômico. Dentre as criações mais recentes são destaques: Bacalhau, Berinjela, Itália (de presunto Parma), Picanha, Popay, Salmão, Zucchine (abobrinha), Pêra com Gorgonzola, Maçã Verde, Casquinha de Siri e as inacreditáveis Abacaxi ou Manga com Pimenta. Por tudo isso, a Frajola?s Pizzaria é sinônimo de qualidade e muito sabor. Agora é sua vez de provar e fazer parte desta deliciosa história!','Nossa História Principal ',1);
+/*!40000 ALTER TABLE `tbl_nossa_historia` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_nosso_ambiente`
+--
+
+DROP TABLE IF EXISTS `tbl_nosso_ambiente`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_nosso_ambiente` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(40) NOT NULL,
+  `cidade` varchar(20) NOT NULL,
+  `bairro` varchar(35) NOT NULL,
+  `rua` varchar(36) NOT NULL,
+  `telefone` varchar(13) NOT NULL,
+  `horaAbrir` varchar(5) NOT NULL,
+  `horaFechar` varchar(5) NOT NULL,
+  `opc` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_nosso_ambiente`
+--
+
+LOCK TABLES `tbl_nosso_ambiente` WRITE;
+/*!40000 ALTER TABLE `tbl_nosso_ambiente` DISABLE KEYS */;
+INSERT INTO `tbl_nosso_ambiente` VALUES (1,'Matriz','Cotia','Centro','Av. Nossa Senhora de Fátima. Nº:266','011 4854-0230','18:00','01:00',1);
+/*!40000 ALTER TABLE `tbl_nosso_ambiente` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_pizza_mes`
+--
+
+DROP TABLE IF EXISTS `tbl_pizza_mes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_pizza_mes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) NOT NULL,
+  `descricao` varchar(70) NOT NULL,
+  `opc` tinyint(1) NOT NULL,
+  `preco` varchar(30) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_pizza_mes`
+--
+
+LOCK TABLES `tbl_pizza_mes` WRITE;
+/*!40000 ALTER TABLE `tbl_pizza_mes` DISABLE KEYS */;
+INSERT INTO `tbl_pizza_mes` VALUES (1,'Pizza de Brigadeiro','Cocolate, chocolate granulado',1,'20,00 ');
+/*!40000 ALTER TABLE `tbl_pizza_mes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_promocoes`
+--
+
+DROP TABLE IF EXISTS `tbl_promocoes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_promocoes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) NOT NULL,
+  `preco` varchar(5) NOT NULL,
+  `promo` varchar(5) NOT NULL,
+  `descricao` varchar(70) NOT NULL,
+  `opc` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_promocoes`
+--
+
+LOCK TABLES `tbl_promocoes` WRITE;
+/*!40000 ALTER TABLE `tbl_promocoes` DISABLE KEYS */;
+INSERT INTO `tbl_promocoes` VALUES (1,'Kinder ovo','30,50','21,00','Chocolate e pedaços de kinder ovo',1);
+/*!40000 ALTER TABLE `tbl_promocoes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_usuario`
+--
+
+DROP TABLE IF EXISTS `tbl_usuario`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_usuario` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `usuario` varchar(15) NOT NULL,
+  `senha` varchar(20) NOT NULL,
+  `nome` varchar(35) NOT NULL,
+  `telefone` varchar(20) DEFAULT NULL,
+  `celular` varchar(21) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `sexo` varchar(1) NOT NULL,
+  `idNivel` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `tbl_usuario_ibfk_1` (`idNivel`),
+  CONSTRAINT `tbl_usuario_ibfk_1` FOREIGN KEY (`idNivel`) REFERENCES `tbl_nivel` (`idNivel`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_usuario`
+--
+
+LOCK TABLES `tbl_usuario` WRITE;
+/*!40000 ALTER TABLE `tbl_usuario` DISABLE KEYS */;
+INSERT INTO `tbl_usuario` VALUES (1,'allan','123456','Allan Alves de Aquino','11 45681235','11 9456123458','allan@teste.com','M',1),(4,'teste','teste','AllanTeste','','11 95083-3214','allan@gmail.com','M',3);
+/*!40000 ALTER TABLE `tbl_usuario` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-10-31 23:45:52

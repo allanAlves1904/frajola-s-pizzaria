@@ -1,0 +1,280 @@
+/*CSS*/
+body{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
+    background-image: url('../img/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#segura_tudo{
+    width: 900px;
+    min-height: 770px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px #000;
+    border-radius: 20px 20px 20px 20px;
+}
+
+/*Cabecalho*/
+header{
+    width: 900px;
+    height: 160px;
+    border-radius: 20px 20px 0px 0px;
+    background-color:#D2691E;     
+}
+
+#cms{
+    width:330px;
+	height:50px;
+    margin-top: 60px;
+    margin-left: 50px;  
+    float: left;
+    font-size: 18px;
+}
+
+span{
+    font-size:25px;
+}
+
+
+#logo{
+	width:210px;
+	height:120px;
+    margin-top: 15px;
+    margin-left: 200px;
+    float: left;
+}
+
+
+/*Conteudo*/
+#principal{
+    width: 900px;
+    min-height: 550px; 
+    height: auto;
+}
+
+/*Primeira linha*/
+#linha1{
+    width: 900px;
+    height: 150px;
+    background-color: #CD853F;
+}
+
+#segura_menu{
+    width: 615px;
+    height: 150px;
+    float: left;
+}
+
+.opc_adm{
+    width: 130px;
+    height: 150px;
+    margin-left: 20px;
+    float: left;
+}
+
+.img_opc_adm{
+    width: 130px;
+    height: 130px;        
+}
+
+.texto_opc_adm{
+    width: 130px;
+    height: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+
+#texto_opc_adm_cor{
+    width: 130px;
+    height: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+
+#area_nome{
+    width: 285px;
+    height: 80px;
+    float: left;
+}
+
+#bv{
+    width: 285px;
+    height: 25px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#nome{
+    width: 285px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#area_botao{
+    width: 285px;
+    height: 70px;
+    float: left;
+}
+
+#bt{
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 225px;
+}
+
+/*Segunda linha*/
+#linha2{
+    width: 900px;
+    min-height: 400px;
+    height: auto;
+    background-color: #DEB887;
+}
+
+.branco{
+    width: 10px;
+    height: 20px;
+}
+
+#inf_user{
+    width: 710px;
+    height: 52px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.informaçao_usuario{
+    width: 710px;
+    height: 52px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tamanho{
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    padding-top: 15px;
+    float: left;
+    font-size: 17px;    
+    border: solid 1px #000;
+    background-color: #990000;
+}
+
+.tamanho_ctd{
+    width: 150px;
+    height: 50px;
+    float: left;
+    font-size: 17px; 
+    text-align: center;
+    border: solid 1px #000;
+    background-color: #CD853F;
+/*: overflow: auto;*/
+}
+
+
+.bt_opc{
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    padding-top: 15px;
+    float: left;
+    font-size: 17px;    
+    border: solid 1px #000;
+    background-color: #990000;
+}
+
+.opc_bt{
+    width: 100px;
+    height: 50px;
+    float: left;
+    font-size: 17px;    
+    border: solid 1px #000;
+    background-color: #CD853F;
+}
+
+#inf_nivel{
+    width: 254px;
+    height: 52px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+
+
+.informacao_nivel{
+    width: 254px;
+    height: 52px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#novo{
+    width: 900px;
+    height: 110px;
+    
+}
+
+.coluna{
+    width: 449px;
+    height: 100px;
+    padding-top: 10px;
+    float: left;
+    border-right: solid 1px #000;
+}
+
+.center{
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.texto{
+    width: 120px;
+    height: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+/*Rodape*/
+footer{
+    width: 900px;
+    height: 40px;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+    font-size: 18px;
+    background-color: #D2691E;
+}
+
+.modal{
+	width:700px;
+	height:500px;
+	background-color:#ffffff;
+	margin:auto;
+	margin-top:250px;
+
+}
+
+.modalContainer{
+	width:100%;
+	height:100%;
+	background: rgba(0, 0, 0, 0.7);
+	position:fixed;
+	display:none;
+	
+
+}

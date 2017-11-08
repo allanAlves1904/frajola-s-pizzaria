@@ -1,0 +1,224 @@
+body{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
+    background-image: url('../img/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Cabeçalho*/
+header{
+    width: auto;    
+    height: 150px;
+}
+
+#transparente{
+    width: auto;    
+    height: 150px;
+    background-color: #663300;
+    opacity: .6;
+}
+
+#segura{
+    width: 1200px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 999;
+    position: relative;
+    margin-top: -150px; 
+}
+
+#logo{
+	width:230px;
+	height:140px;
+    padding-top: 10px;
+    padding-left: 20px;
+    float: left;
+    margin-right: 100px;
+}
+
+#menu{
+    width: 500px;
+    height: 150px;
+    float: left;
+    margin-right: 100px;
+}
+
+.item_menu{
+     width: 120px;
+    height: 45px;
+    padding-top: 15px;
+    float: left;
+    text-align: center;
+    margin-right: 5px;  
+    font-family:inherit;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.item_menu_diferente{
+    width: 120px;
+    height: 55px;
+    padding-top: 5px;
+    float: left;
+    text-align: center;
+    margin-right: 5px;  
+    font-family:inherit;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+
+#cima{
+    width: 500px;
+    height: 65px;
+    margin-top: 10px;
+}
+
+#baixo{
+    width: 375px;
+    height: 65px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.item_menu a{
+   color: #000;
+}
+
+.item_menu_diferente a{
+   color: #000;
+}
+
+.item_menu_diferente #cor{
+   color: #FFFF00;
+}
+/**/
+#principal{
+    width: 700px;
+    min-height: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dcdcdc;
+}
+
+#branco{
+    height: 20px;
+}
+
+/**/
+#titulo{
+    width: 700px;
+    height: 50px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 25px ;
+    font-family:Arial;
+}
+
+.sub_titulo{
+    width: 690px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    font-size: 18px ;
+    font-family:Arial;
+    text-align: justify;
+}
+
+.texto{
+    width: 670px;
+    min-height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+    text-align: justify;
+}
+/*Rodapé*/
+footer{
+    width: auto;    
+    height: 87px;
+}
+
+#segura1{
+    width: 960px;
+    height: 87px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 999;
+    position: relative;
+    margin-bottom: -86px;
+}
+
+#transparente1{
+    width: auto;    
+    height: 87px;
+    background-color: #663300;
+    opacity: .6;
+}
+
+#t{
+    width: 960px;
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+    font-family:Arial;
+}
+
+#mapa_site{
+    width: 800px;
+    height: 50px;
+    float: left;
+    margin-top: 5px;
+}
+
+.item_mapa{
+    width: 100px;
+    height: 50px;
+    float: left;
+    font-family:inherit;
+    color: #000;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.item_mapa a{
+   color: #000;
+}
+
+#rede_social{
+    width: 150px;
+    height: 56px;
+    float: left;
+    background-color: #d9c8aa;
+}
+
+
+#rede_social_titulo{
+    width: 150px;
+    height: 20px;
+    text-align: center;
+    font-family:inherit;
+    background-color: #ff8c00;
+}
+
+#ceter{
+    width: 96px;
+    height: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon{
+    width: 32px;
+    height: 32px;
+    float: left;
+}
